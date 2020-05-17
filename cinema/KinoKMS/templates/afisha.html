@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel='stylesheet' href='{% static "css/afisha_view.css" %}'>
+{% endblock %}
+{% block title %}Афиша{% endblock %}
+{% block content %}
+<div class='content'>
+	<div id='left_side'>
+		<div id="soon_now">
+			<nav class="nav nav-pills flex-column">
+			  <a class="nav-link active" href="#">Сейчас в прокате</a>
+			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Скоро</a>
+			</nav>
+		</div>
+		<div class='adv_left'>
+			<img src="/media/banner.gif">
+		</div>
+	</div>
+	<div id='film_list'>
+				{% for film in films %}
+					<a href="{% url 'afisha' film=film.id %}"><div class='afisha_film'>
+						<div class='info'>
+					    	<img src="{{ film.main_image.url }}">
+					    	<span class='name'>{{film.name}}</span>
+						</div>
+					    <button type="button" class="btn btn-warning btn-block">&#128184;Купить</button>
+					</div></a>
+				{% endfor %}
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+$(function(){
+	console.log($('title').html());
+	$('.nav-link').each(function(){
+		if($('title').html()==$(this).html()){
+			console.log($(this).html())
+			$(this).parent().addClass('active');
+		}
+	});
+});

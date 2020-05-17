@@ -1,0 +1,39 @@
+.container{	
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.film img{
+	max-width: 200px;
+}
+.film a div{
+	font-size:13px;
+	width:30px;
+	height: 30px;
+}
+.film a i{
+	font-size:13px;
+	display: block;
+	height:30px;
+}
+.film{
+	margin:1px;
+	border:1px solid rgba(255,255,255,0);
+	border-radius:5px 5px 5px 5px;
+	min-width:210px;
+	max-width:210px;
+	cursor:pointer;
+}
+.film:hover{
+	border:1px solid black;
+}
+.name{
+	display: inline-block;
+	width: 100%;
+	font:22px Helvetica;
+	font-weight: bold;
+	text-align: center;
+  	height: 55px;
+}

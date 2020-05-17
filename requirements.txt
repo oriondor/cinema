@@ -1,0 +1,4 @@
+django
+psycopg2
+django-adminlte2
+Pillow

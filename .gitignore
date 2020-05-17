@@ -1,0 +1,5 @@
+venv/
+cinema/cinema/settings.py
+cinema/media/films/
+cinema/KinoKMS/migrations
+cinema/adminKino/migrations

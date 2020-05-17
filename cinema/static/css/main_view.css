@@ -1,0 +1,41 @@
+
+#film_list{
+	display:flex;
+	flex-wrap: wrap;
+}
+.main_film img{
+	max-width: 150px;
+}
+.main_film a div{
+	font-size:13px;
+	width:30px;
+	height: 30px;
+}
+.main_film a i{
+	font-size:13px;
+	display: block;
+	height:30px;
+}
+.main_film{
+	margin:1px;
+	border-radius:5px 5px 5px 5px;
+	min-width:160px;
+	max-width:160px;
+	cursor:pointer;
+}
+.main_film .info{
+	max-height: 245px;
+	min-height: 245px;
+}
+.name{
+	display: inline-block;
+	text-decoration: underline;
+	width: 100%;
+	font:15px Helvetica;
+	font-weight: bold;
+	text-align: left;
+  	height: 55px;
+}
+.main_film button{
+	margin:auto;
+}

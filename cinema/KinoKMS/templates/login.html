@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel='stylesheet' href='{% static "css/login_view.css" %}'>
+{% endblock %}
+{% block title %}Вход|Регистрация{% endblock %}
+
+{% block content %}
+	<div id='auth'>
+		<div id="login">
+			<h2>Войти</h2>
+			<form method="POST">{% csrf_token %}
+			  <div class="form-group">
+			    <label for="log_mail">Email адрес</label>
+			    <input type="email" class="form-control" name='log_mail' id="log_mail" aria-describedby="log_emailHelp">
+			    <small id="log_emailHelp" class="form-text text-muted">Мы не передаем вашу почту третьим лицам.</small>
+			  </div>
+			  <div class="form-group">
+			    <label for="log_pass">Пароль</label>
+			    <input type="password" class="form-control" name="log_pass" id="log_pass">
+			  </div>
+			  <div class="form-group form-check">
+			    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+			  </div>
+			  <input type="hidden" name="Login" value="Login">
+			  <button type="submit" class="btn btn-primary">Войти</button>
+			</form>
+		</div>
+		<div id="register">
+			<form method="POST">{% csrf_token %}
+				<h2>Зарегистрироваться</h2>
+				<div class="form-group">
+				    <label for="first_name">Имя</label>
+				    <input type="text" class="form-control" name="first_name" id="first_name">
+				</div>
+				<div class="form-group">
+				    <label for="last_name">Фамилия</label>
+				    <input type="text" class="form-control" name="last_name" id="last_name">
+				</div>
+			  	<div class="form-group">
+				    <label for="reg_mail">Email адрес</label>
+				    <input type="email" class="form-control" name="reg_mail" id="reg_mail" aria-describedby="reg_emailHelp">
+				    <small id="reg_emailHelp" class="form-text text-muted">Мы не даем ваш e-mail никому.</small>
+			  	</div>
+				  	<div class="form-group">
+				    <label for="reg_pass">Пароль</label>
+				    <input type="password" class="form-control" name="reg_pass" id="reg_pass">
+			  </div>
+			  <input type="hidden" name="Login" value="Registration">
+			  <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+
+#film_info{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: space-evenly;
+}
+#left-side img{
+	width:300px;
+}
+#right-side{
+	padding:30px;
+}
+.carousel-item img{
+	max-height: 200px;
+}
+#other_photos{
+	text-align: center;
+}
+#slideshow{
+	margin: auto;
+	max-width: 460px;
+
+}
+#types{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top:10px;
+}
+.type{
+	background:#FFCA33;
+	border-radius: 10px 10px 10px 10px;
+	padding: 10px;
+	margin: 10px;
+}

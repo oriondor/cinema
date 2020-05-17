@@ -1,0 +1,8 @@
+.film img{
+	max-width: 200px;
+}
+.film{
+	border:1px solid black;
+	border-radius:5px 5px 5px 5px;
+	width:210px;
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<link rel='stylesheet' href='{% static "css/film_view.css" %}'>
+{% endblock %}
+{% block title %}{{film.name}}{% endblock %}
+
+{% block content %}
+	
+<div id="film_info">
+	<div id='left-side'>
+		<img src="{{ film.main_image.url }}">
+		<div id='types'>
+			{% for type in film.cinema_type %}
+				<div class='type'>{{type}}</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div id='right-side'>
+		<h2 style='color:#0C7158;'>Название</h2 style='color:#0C7158;'>
+		<h3>{{film.name}}</h3>
+		<h2 style='color:#0C7158;'>Описание</h2 style='color:#0C7158;'>
+		<p>{{film.description}}</p>
+		<h2 style='color:#0C7158;'>Трейлер</h2 style='color:#0C7158;'>
+		<p>{{film.trailer_link}}</p>
+		<div id="other_photos">	
+			<h2 style='color:#0C7158;'>Кадрый фильма</h2 style='color:#0C7158;'>		
+			  {% for photo in other_photos %}
+			      <img src="{{ photo.image.url }}" class="d-block w-100" alt="...">
+			  {% endfor %}
+		</div>
+	</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+body{
+	background-image: url('/media/banners/background-banner.jpg');
+	background-size: 110%, 20%;
+}
+
+#body{
+	width: 80%;
+	max-width: 1000px;
+	min-width: 450px;
+	background: #f8f9fa;
+    margin: auto;
+    padding: 5px;
+}
+header{
+}
+content{
+	width:100%;
+}
+.mainpage_content{
+	    flex-grow: 4;
+}
+#film_list a{
+	text-decoration: none;
+}
+.sign{
+	font-size: 15pt;
+	text-align: center;
+	padding: 5px;
+}
+footer{
+	display: flex;
+	padding: 10px;
+	padding-top: 30px;
+	min-height: 100px;
+	border-top:3px solid black;
+	justify-content: space-evenly;
+}
+#stores{
+	font:10pt Helvetica;
+}
+.store img{
+	float:left;
+	width:10rem;
+}
+#navigation{
+	font:10pt Helvetica;
+	display: flex;
+}
+#navigation ul{
+	 list-style-type: none;
+}
+#navigation ul li{
+	margin-top: 5px;
+}
+#navigation ul a{
+	color:black;
+}
+#navigation ul .first_item{
+	font-size:12pt;
+}
+.social_box{
+	display:flex;
+}
+.social img{
+	width: 2rem;	
+	height: : 2rem;
+	min-width:30px;
+	min-height:30px;
+}
+@media screen and (max-width: 800px){
+	footer .social_box{
+		flex-direction: column;
+	}
+}

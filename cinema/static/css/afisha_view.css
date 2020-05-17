@@ -1,0 +1,63 @@
+.content{
+	display: flex;
+	flex-wrap: nowrap;
+}
+#left_side{
+	display: flex;
+	flex-direction: column;
+}
+#soon_now div{
+	display: block;
+}
+
+#film_list{
+	flex-wrap: wrap;
+	display:flex;    
+	flex-grow: 4;
+    background: rgba(0,0,0,0.8);
+}
+.afisha_film{
+	margin:15px;
+	border-radius:5px 5px 5px 5px;
+	min-width:160px;
+	max-width:160px;
+	cursor:pointer;
+	max-height: 285px;
+}
+.afisha_film img{
+	max-width: 150px;
+	border-radius: 5px 5px 5px 5px;
+}
+.afisha_film a div{
+	font-size:13px;
+	width:30px;
+	height: 30px;
+}
+.afisha_film a i{
+	font-size:13px;
+	display: block;
+	height:30px;
+}
+
+.afisha_film .info{
+	max-height: 245px;
+	min-height: 245px;
+}
+.name{
+	color:#00BFFF;
+	display: inline-block;
+	text-decoration: underline;
+	width: 100%;
+	font:15px Helvetica;
+	font-weight: bold;
+	text-align: left;
+  	height: 55px;
+}
+.afisha_film button{
+	color:white;
+	letter-spacing:2px;
+	font-size: 12pt;
+	font-weight: bold;
+	margin:auto;
+	border-radius: 26px 26px 26px 26px;
+}
