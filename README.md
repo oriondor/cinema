@@ -8,7 +8,7 @@ To use admin panels you should do './manage.py createsuperuser' first and login 
 
 This version doesn't provide any functionality for customization of view (banners, logos) through admin panel. By now all of the banners are hardcoded.
 
-It's required to use this code over your own django project with your own settings.py file that would contain your own database settings. You should use Postres for this project.
-Just copy the code of the apps and urls from project to your new django project, run migrations and your're all set!
+It's required to use this code over your own django project with your own settings.py file that would contain your own database settings. You should use Postgres for this project.
+Just copy the code of the apps and urls from repository to your new django project, run migrations and your're all set!
 
 All dependencies are in requirements.txt
